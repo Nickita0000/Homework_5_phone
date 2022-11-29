@@ -1,0 +1,31 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding-bottom: 75px;
+  background-color: #CBDFE7;
+  .nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 25px 0 35px;
+    &__elem{
+      display: block;
+      margin-top: 15px;
+    }
+    &__link{
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+  .annotation{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.2;
+    font-weight: 400;
+  }
+}

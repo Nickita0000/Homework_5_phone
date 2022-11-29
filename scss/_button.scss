@@ -1,0 +1,11 @@
+.main_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    min-height: 40px;
+    text-decoration: none;
+    border-radius: 3px;
+    background: #131313; //сделать как var
+    color: #FFFFFF;
+}
