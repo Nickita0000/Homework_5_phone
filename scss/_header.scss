@@ -1,12 +1,35 @@
 .header{
   padding-left: calc(50vw - 125px);
   padding-right: calc(50vw - 125px);
+  @media screen and (min-width: 841px){
+    padding-left: calc(50vw - 420px);
+    padding-right: calc(50vw - 420px);
+  }
+  @media screen and (min-width: 1351px){
+    padding-left: calc(50vw - 675px);
+    padding-right: calc(50vw - 675px);
+  }
+  &__logo{
+    @media screen and (min-width: 841px) {
+      width: 157px;
+      height: 25px;
+    }
+  }
 }
+
 .header{
   display: flex;
   justify-content: space-between;
   width: 320px;
   padding: 20px;
+  @media screen and (min-width: 841px) {
+    width: auto;
+    padding: 0 30px;
+    width: 840px;
+  }
+  @media screen and (min-width: 1351px){
+    width: 1350px;
+  }
 }
 
 .link{
@@ -16,20 +39,42 @@
 }
 
 .nav{
+  display: flex;
+  align-items: center;
+  &__burger{
     display: flex;
+    justify-content: center;
     align-items: center;
-    &__burger{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: none;
-      background: none;
-      padding: 0;
-    }
-    &__list{
+    border: none;
+    background: none;
+    padding: 0;
+    @media screen and (min-width: 841px) {
       display: none;
-      //display: flex;
     }
+  }
+  &__list{
+    display: none;
+    @media screen and (min-width: 841px) {
+      display: flex;
+      padding: 0;
+      align-items: center;
+    }
+  }
+  &__elem{
+    display: block;
+    margin-right: 30px;
+    list-style: none;
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  &__link{
+    text-decoration: none;
+    color: #131313;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
 }
 
 
