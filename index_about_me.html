@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework_5_Text_page</title>
+  <link rel="stylesheet" href="norm/normalize.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css_text_page/style.css">
+</head>
+
+<body class="text-[#131313] leading-[140%] flex flex-col items-center">
+<header>
+  <div class="header flex justify-between w-80 p-5 bg-gradient-to-r from-[#EFF243] to-[#F0B379]">
+    <a href="#" class="link flex justify-center no-underline">
+      <img src="img/logo.png" alt="logo" class="header__logo">
+    </a>
+    <nav class="nav flex justify-center">
+      <button class="nav__burger flex justify-center items-center border-none bg-none p-0">
+        <img src="img/burger.png" alt="burger">
+      </button>
+      <ul class="nav__list hidden">
+        <li class="nav__elem block mr-8 list-none no-underline text-base font-normal leading-normal">
+          <a href="#" class="nav__link">
+            Тарифы
+          </a>
+        </li>
+        <li class="nav__elem block mr-8 list-none no-underline text-base font-normal leading-normal">
+          <a href="#" class="nav__link">
+            FAQ
+          </a>
+        </li>
+        <li class="nav__elem block mr-8 list-none no-underline text-base font-normal leading-normal">
+          <a href="#" class="main_button flex justify-center items-center w-30 h-[50px] rounded-[3px] bg-[#131313] text-white">
+            Войти
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="w-80">
+  <div class="content flex flex-col items-center justify-center">
+    <img src="img/about_me.png" alt="Me" class="mb-[15px] mt-10">
+    <h6 class="text-[15px] leading-[18px] font-bold mb-5">
+      Михаил Сергеевич
+    </h6>
+    <p class="text-[16px] leading-[150%] font-light text-center mb-5">
+      Для окончания регистрации введите свой <br>e-mail. Он будет виден только для нашей компании и необходим для выставления счетов и таргетированных рассылак.
+    </p>
+    <a href="#" class="flex justify-center items-center w-[290px] h-[50px] rounded-[10px] bg-[#D8D8D8] text-[16px] leading-[150%] font-normal mb-[22px]">
+      Mail@gmail.com
+    </a>
+    <a href="#" class="flex justify-center items-center w-60 h-[50px] rounded-[3px] bg-[#131313] text-white font-semibold mb-[60px]">
+      Зарегистрироваться и войти
+    </a>
+  </div>
+</main>
+
+<footer class="footer flex flex-col w-80 pb-[75px] font-normal text-[14px] bg-[#CBDFE7]">
+  <ul class="nav flex flex-col justify-center items-center p-0 mt-[25px] mb-[35px]">
+    <li class="nav__elem block mt-[15px]">
+      <a href="#" class="footer__link text-[#131313] no-underline">
+        Политика конфиденциальности
+      </a>
+    </li>
+    <li class="nav__elem block mt-[15px]">
+      <a href="#" class="footer__link text-[#131313] no-underline">
+        Договор-оферта
+      </a>
+    </li>
+    <li class="nav__elem block mt-[15px]">
+      <a href="#" class="footer__link text-[#131313] no-underline">
+        Цены и тарифы
+      </a>
+    </li>
+    <li class="nav__elem block mt-[15px]">
+      <a href="#" class="footer__link text-[#131313] no-underline">
+        О компании
+      </a>
+    </li>
+  </ul>
+  <div class="annotation flex flex-col-reverse justify-center items-center opacity-20 font-normal">
+    <img src="img/logo.png" alt="Logotype" class="annotation__logo mt-[15px]">
+    <p class="annotation__desc">
+      © 2019 obvi.link.com
+    </p>
+  </div>
+</footer>
+
+</body>
+
+</html>

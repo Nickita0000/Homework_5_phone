@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Homework_5_rates</title>
+  <link rel="stylesheet" href="norm/normalize.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
+<!--  <link rel="stylesheet" href="css_rates/style.css">-->
+</head>
+
+<body class="text-[#131313] leading-[140%] flex flex-col items-center">
+
+  <header>
+    <div class="header flex justify-between w-80 p-5 bg-gradient-to-r from-[#EFF243] to-[#F0B379]">
+      <a href="#" class="link flex justify-center no-underline">
+        <img src="img/logo.png" alt="logo" class="header__logo">
+      </a>
+      <nav class="nav flex justify-center">
+        <button class="nav__burger flex justify-center items-center border-none bg-none p-0">
+          <img src="img/burger.png" alt="burger">
+        </button>
+        <ul class="nav__list hidden">
+          <li class="nav__elem block mr-8 list-none no-underline text-base font-normal leading-normal">
+            <a href="#" class="nav__link">
+              Тарифы
+            </a>
+          </li>
+          <li class="nav__elem block mr-8 list-none no-underline text-base font-normal leading-normal">
+            <a href="#" class="nav__link">
+              FAQ
+            </a>
+          </li>
+          <li class="nav__elem block mr-8 list-none no-underline text-base font-normal leading-normal">
+            <a href="#" class="main_button flex justify-center items-center w-30 h-[50px] rounded-[3px] bg-[#131313] text-white">
+              Войти
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex flex-col items-center">
+    <div class="content">
+      <section class="flex flex-col justify-center items-center w-80 rates">
+        <img src="img/rates.png" alt="Rates" class="rates__img mt-20 mb-3.5">
+        <h3 class="rates__title font-bold leading-normal text-[30px] mb-2.5">
+          Тарифы
+        </h3>
+        <div class="slider rates__slider h-10 mt-2.5">
+          <input type="radio" name="rates" class="slide--rates sr-only visually-hidden" id="rates_slide_1" checked>
+          <input type="radio" name="rates" class="slide--rates sr-only visually-hidden" id="rates_slide_2">
+          <input type="radio" name="rates" class="slide--rates sr-only visually-hidden" id="rates_slide_3">
+
+          <div class="flex flex-row flex-nowrap justify-center items-center h-10 box-border active--rates">
+            <label for="rates_slide_1" class="rounded-tl-sm rounded-bl-sm flex justify-center items-center w-[6.25rem] h-10 bg-white border border-solid border-[#B4B4B4] text-xs font-semibold box-border switch radius_1">
+              1 мес.
+            </label>
+            <label for="rates_slide_2" class="flex justify-center items-center w-[6.25rem] h-10 bg-white border border-solid border-[#B4B4B4] text-xs font-semibold box-border switch">
+              <div class="percents flex flex-row flex-nowrap justify-center items-center w-[6.25rem] h-10">
+                <p class="percents__text ">
+                  6 мес.
+                </p>
+                <p class="percents__oval flex justify-center items-center w-[2.375rem] h-5 rounded-[30px] ml-1.5 bg-gradient-to-r from-[#FCE154] to-[#FDBB7D]">
+                  -30%
+                </p>
+              </div>
+            </label>
+            <label for="rates_slide_3" class="flex justify-center items-center w-[6.25rem] h-10 bg-white border border-solid border-[#B4B4B4] text-xs font-semibold rounded-tr-sm rounded-br-sm box-border switch radius_3">
+              <div class="percents flex flex-row flex-nowrap justify-center items-center ">
+                <p class="percents__text">
+                  1 год.
+                </p>
+                <p class="percents__oval flex justify-center items-center w-[2.375rem] h-5 rounded-[1.875rem] ml-1.5 bg-gradient-to-r from-[#FCE154] to-[#FDBB7D]">
+                  -40%
+                </p>
+              </div>
+            </label>
+          </div>
+        </div>
+      </section>
+
+      <section class="subs flex flex-col items-center justify-center">
+        <div class="subs__block">
+          <div class="subs__proposal flex-col items-center justify-center w-80 mt-10">
+            <div class="img_cont flex items-center justify-center">
+              <img src="img/subs_logo_1.png" alt="Free" class="subs__logo">
+            </div>
+            <h3 class="subs__title mt-4 mb-2.5 text-[20px] font-bold flex items-center justify-center">
+              Бесплатно
+            </h3>
+            <h5 class="subs__cost font-semibold text-lg text-[#20AF48] mb-5 text-[18px] flex items-center justify-center">
+              2 недели / 0$
+            </h5>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t-2 border-solid border-[#131313] text-[13px]">
+              1 мессенжер
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              1 кнопка
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              1 текстовый блок
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Оформление страницы
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Плашка "Работает на Obvi.link"
+            </p>
+            <p class="subs__advantages display hidden">
+              -
+            </p>
+            <p class="subs__advantages display hidden">
+              -
+            </p>
+          </div>
+          <div class="subs__proposal flex-col items-center justify-center w-80 mt-10">
+            <div class="img_cont flex items-center justify-center">
+              <img src="img/subs_logo_2.png" alt="Fee" class="subs__logo">
+            </div>
+            <h3 class="subs__title mt-4 mb-2.5 text-[20px] font-bold flex items-center justify-center">
+              Платно
+            </h3>
+            <h5 class="subs__cost font-semibold text-lg text-[#20AF48] text-[18px] mb-5 flex items-center justify-center">
+              1 месяц / 5.99$
+            </h5>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t-2 border-solid border-[#131313] text-[13px]">
+              Неограниченное количество мессенджеров
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Неограниченное количество кнопок
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Неограниченное количество блоков
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Оформление страницы
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Блок “Мои услуги”
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Карта
+            </p>
+            <p class="subs__advantages flex items-center justify-center h-[50px] border-t border-solid border-[#EDEDED] text-[13px]">
+              Отсутствует плашка "Работает на obvi.link"
+            </p>
+          </div>
+        </div>
+        <a href="#" class="main_button subs__button flex justify-center items-center w-[290px] h-[50px] rounded-[3px] bg-[#131313] text-white text-[13px] mt-5 mx-[15px] mb-20">
+          Получить PRO на 2 недели бесплатно
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer flex flex-col w-80 pb-[75px] font-normal text-[14px] bg-[#CBDFE7]">
+    <ul class="nav flex flex-col justify-center items-center p-0 mt-[25px] mb-[35px]">
+      <li class="nav__elem block mt-[15px]">
+        <a href="#" class="footer__link text-[#131313] no-underline">
+          Политика конфиденциальности
+        </a>
+      </li>
+      <li class="nav__elem block mt-[15px]">
+        <a href="#" class="footer__link text-[#131313] no-underline">
+          Договор-оферта
+        </a>
+      </li>
+      <li class="nav__elem block mt-[15px]">
+        <a href="#" class="footer__link text-[#131313] no-underline">
+          Цены и тарифы
+        </a>
+      </li>
+      <li class="nav__elem block mt-[15px]">
+        <a href="#" class="footer__link text-[#131313] no-underline">
+          О компании
+        </a>
+      </li>
+    </ul>
+    <div class="annotation flex flex-col-reverse justify-center items-center opacity-20 font-normal">
+      <img src="img/logo.png" alt="Logotype" class="annotation__logo mt-[15px]">
+      <p class="annotation__desc">
+        © 2019 obvi.link.com
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>

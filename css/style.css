@@ -319,6 +319,11 @@ body {
 @media screen and (min-width: 841px) {
   .slider {
     width: 300px;
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1351px) {
+  .slider {
     margin-left: 140px;
   }
 }
@@ -654,6 +659,7 @@ label:hover {
 @media screen and (min-width: 841px) {
   .subs {
     width: 780px;
+    justify-content: left;
     border-radius: 30px;
     padding: 45px 30px 50px;
     margin-bottom: 80px;
@@ -672,6 +678,7 @@ label:hover {
   .subs__block {
     display: flex;
     flex-direction: row;
+    justify-content: left;
   }
 }
 .subs__proposal {
@@ -683,13 +690,16 @@ label:hover {
   margin-top: 40px;
 }
 .subs__proposal:nth-child(2) {
-  margin: 5px 0 0 20px;
+  margin: 5px 0 0 0;
 }
 @media screen and (min-width: 841px) {
   .subs__proposal {
     width: 350px;
     margin-top: 0;
     justify-content: start;
+  }
+  .subs__proposal:nth-child(2) {
+    margin: 5px 0 0 20px;
   }
 }
 @media screen and (min-width: 1351px) {
@@ -719,7 +729,7 @@ label:hover {
   font-weight: 400;
 }
 .subs__advantages:nth-child(4) {
-  border-top: 1px solid #131313;
+  border-top: 2px solid #131313;
 }
 @media screen and (min-width: 841px) {
   .subs__advantages {
